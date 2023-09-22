@@ -717,39 +717,6 @@ void mousePressed(int x, int y) {
     }
 }
 
-void printInstructions() {
-
-    printf("+--------------------------- INSTRUCOES ---------------------------+\n");
-    printf("|                                                                  |\n");
-    printf("| - Para movimentar a camera basta clicar com o botao esquerdo do  |\n");
-    printf("|   mouse sobre o personagem e arrastar na direcao desejada;       |\n");
-    printf("|                                                                  |\n");
-    printf("| - Para movimentar os membros do personagem (pernas, bracos, etc) |\n");
-    printf("|   basta selecionar o membro desejado e entao utilizar as setas   |\n");
-    printf("|   do teclado (cima, baixo, esquerda e direita) para move-lo;     |\n");
-    printf("|                                                                  |\n");
-    printf("| - Teclas para selecionar os membros do personagem:               |\n");
-    printf("|                                                                  |\n");
-    printf("|     W : Cabeca;                                                  |\n");
-    printf("|     A : Braco Superior Direito;                                  |\n");
-    printf("|     Z : Braco Inferior Direito;                                  |\n");
-    printf("|     S : Braco Superior Esquerdo;                                 |\n");
-    printf("|     X : Braco Inferior Esquerdo;                                 |\n");
-    printf("|     D : Perna Superior Direita;                                  |\n");
-    printf("|     C : Perna Inferior Direita;                                  |\n");
-    printf("|     F : Perna Superior Esquerda;                                 |\n");
-    printf("|     V : Perna Inferior Esquerda;                                 |\n");
-    printf("|                                                                  |\n");
-    printf("| - Teclas Uteis:                                                  |\n");
-    printf("|                                                                  |\n");
-    printf("|     R : Restart Camera                                           |\n");
-    printf("|     + : Zoom In;                                                 |\n");
-    printf("|     - : Zoom Out;                                                |\n");
-    printf("|                                                                  |\n");
-    printf("+------------------------------------------------------------------+\n");
-
-
-}
 
 
 int main(int argc, char* argv[]) {
@@ -783,7 +750,7 @@ int main(int argc, char* argv[]) {
 
     initializeLighting();
     glutIdleFunc(update);
-    printInstructions();
+   
 
     glutMainLoop();
 
